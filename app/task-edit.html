@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task-manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--HEADER START-->
+<div class="fixet-to-top">
+    <header class="header">
+        <div class="container flex-container">
+            <button class="add-task">
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="user-nav">
+                <a href="#"><i class="icon icon-user"></i></a>
+                <a href="#"><i class="icon icon-logout"></i></a>
+            </nav>
+        </div>
+    </header>
+    <div class="toggle-task-type">
+        <div class="container">
+            <nav class="toggle-task-link">
+                <a href="#" class="active">Активные задачи</a>
+                <a href="#">Все задачи</a>
+            </nav>
+        </div>
+    </div>
+</div>
+<!--HEADER START-->
+<!--MAIN START-->
+<main>
+    <div class="task-content" id="active-task">
+        <div class="container">
+            <div class="task-day">
+                <span class="day">09</span>
+                <span class="month">фев</span>
+            </div>
+            <div class="all-task-wrap">
+                <!--ONE TASK START-->
+                <div class="task-container warning">
+                    <div class="task warning">
+                        <div class="to-do-time">9:00</div>
+                        <div class="task-header flex-container">
+                            <span class="icon icon-arrow"></span>
+                            <div class="short-task-text">Дом: Отдать в химчистку вещи!</div>
+                            <span class="icon icon-cancel"></span>
+                        </div>
+                        <div class="task-content-wrap">
+                            <div class="time-row flex-container">
+                                <div class="task-icon">
+                                    <span class="icon icon-time"></span>
+                                </div>
+                                <span class="time">9:00</span>
+                                <div class="task-icon">
+                                    <span class="icon icon-bell"></span>
+                                </div>
+                            </div>
+                            <div class="task-text-row flex-container">
+                                <div class="task-icon">
+                                    <span class="icon icon-list"></span>
+                                </div>
+                                <div class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam temporibus fugit perspiciatis ab incidunt deserunt
+                                    iure est officiis, molestias nobis aspernatur aperiam cupiditate sapiente dolores ducimus maiores laborum cumque nam.
+                                </div>
+                            </div>
+                            <div class="task-check-row">
+                                <div class="task-icon">
+                                    <span class="icon icon-warning"></span>
+                                    <input type="checkbox" class="icon-warning" id="chkbox-2" name="chkbox-2">
+                                    <label for="chkbox-2">Задача еще не выполнена</label>
+                                </div>
+                            </div>
+                            <div class="task-edit-row">
+                                <div class="task-icon">
+                                    <span class="icon icon-edit"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task-notification">
+                        <div class="warning">
+                            <span class="icon icon-warning"></span>
+                            <div class="task-text">Вы не выполнели эту задачу</div>
+                        </div>
+                        <div class="congratulation">
+                            <span class="icon icon-star"></span>
+                            <div class="task-text">Поздравляем! Вы справились с задачей </div>
+                        </div>
+                    </div>
+                </div>
+                <!--ONE TASK END-->
+                <!--ONE TASK START-->
+                <div class="task-container open">
+                    <div class="task open">
+                        <div class="to-do-time">10:00</div>
+                        <div class="task-header flex-container">
+                            <span class="icon icon-arrow"></span>
+                            <div class="short-task-text">Работа: закончить верстать!</div>
+                            <span class="icon icon-cancel"></span>
+                        </div>
+                        <div class="task-content-wrap">
+                            <div class="time-row flex-container">
+                                <div class="task-icon">
+                                    <span class="icon icon-time"></span>
+                                </div>
+                                <span class="time">9:00</span>
+                                <div class="task-icon">
+                                    <span class="icon icon-bell"></span>
+                                </div>
+                            </div>
+                            <div class="task-text-row flex-container">
+                                <div class="task-icon">
+                                    <span class="icon icon-list"></span>
+                                </div>
+                                <div class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam temporibus fugit perspiciatis ab incidunt deserunt
+                                    iure est officiis, molestias nobis aspernatur aperiam cupiditate sapiente dolores ducimus maiores laborum cumque nam.
+                                </div>
+                            </div>
+                            <div class="task-check-row">
+                                <div class="task-icon">
+                                    <span class="icon icon-warning"></span>
+                                    <input type="checkbox" class="icon-warning" id="chkbox-2" name="chkbox-2">
+                                    <label for="chkbox-2">Задача еще не выполнена</label>
+                                </div>
+                            </div>
+                            <div class="task-edit-row">
+                                <div class="task-icon">
+                                    <span class="icon icon-edit"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task-notification">
+                        <div class="warning">
+                            <span class="icon icon-warning"></span>
+                            <div class="task-text">Вы не выполнели эту задачу</div>
+                        </div>
+                        <div class="congratulation">
+                            <span class="icon icon-star"></span>
+                            <div class="task-text">Поздравляем! Вы справились с задачей </div>
+                        </div>
+                    </div>
+                </div>
+                <!--ONE TASK END-->
+                <!--ONE TASK START-->
+                <div class="task-container prompt">
+                    <div class="task prompt">
+                        <div class="to-do-time">12:00</div>
+                        <div class="task-header flex-container">
+                            <span class="icon icon-arrow"></span>
+                            <div class="short-task-text">Спорт: футбол с парнями!</div>
+                            <span class="icon icon-cancel"></span>
+                        </div>
+                        <div class="task-content-wrap">
+                            <div class="time-row flex-container">
+                                <div class="task-icon">
+                                    <span class="icon icon-time"></span>
+                                </div>
+                                <span class="time">12:00</span>
+                                <div class="task-icon">
+                                    <span class="icon icon-bell"></span>
+                                </div>
+                            </div>
+                            <div class="task-text-row flex-container">
+                                <div class="task-icon">
+                                    <span class="icon icon-list"></span>
+                                </div>
+                                <div class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam temporibus fugit perspiciatis ab incidunt deserunt
+                                    iure est officiis, molestias nobis aspernatur aperiam cupiditate sapiente dolores ducimus maiores laborum cumque nam.
+                                </div>
+                            </div>
+                            <div class="task-check-row">
+                                <div class="task-icon">
+                                    <span class="icon icon-check"></span>
+                                    <input type="checkbox" class="icon-check_box" id="chkbox-1" name="chkbox-1">
+                                    <label for="chkbox-1">Я выполнил задачу</label>
+                                </div>
+                            </div>
+                            <div class="task-edit-row">
+                                <div class="task-icon">
+                                    <span class="icon icon-edit"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task-notification">
+                        <div class="warning">
+                            <span class="icon icon-warning"></span>
+                            <div class="task-text">Вы не выполнели эту задачу</div>
+                        </div>
+                        <div class="congratulation">
+                            <span class="icon icon-star"></span>
+                            <div class="task-text">Поздравляем! Вы справились с задачей </div>
+                        </div>
+                    </div>
+                </div>
+                <!--ONE TASK END-->
+                <!--ONE TASK START-->
+                <div class="task-container success">
+                    <div class="task success">
+                        <div class="to-do-time">13:30</div>
+                        <div class="task-header flex-container">
+                            <span class="icon icon-arrow"></span>
+                            <div class="short-task-text">Дом: забрать консервации!</div>
+                            <span class="icon icon-cancel"></span>
+                        </div>
+                        <div class="task-content-wrap">
+                            <div class="time-row flex-container">
+                                <div class="task-icon">
+                                    <span class="icon icon-time"></span>
+                                </div>
+                                <span class="time">13:30</span>
+                                <div class="task-icon">
+                                    <span class="icon icon-alarm-bell"></span>
+                                </div>
+                            </div>
+                            <div class="task-text-row flex-container">
+                                <div class="task-icon">
+                                    <span class="icon icon-list"></span>
+                                </div>
+                                <div class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam temporibus fugit perspiciatis ab incidunt deserunt
+                                    iure est officiis, molestias nobis aspernatur aperiam cupiditate sapiente dolores ducimus maiores laborum cumque nam.
+                                </div>
+                            </div>
+                            <div class="task-check-row">
+                                <div class="task-icon">
+                                    <span class="icon icon-check"></span>
+                                    <input type="checkbox" class="icon-check_box" id="chkbox-1" name="chkbox-1">
+                                    <label for="chkbox-1">Я выполнил задачу</label>
+                                </div>
+                            </div>
+                            <div class="task-edit-row">
+                                <div class="task-icon">
+                                    <span class="icon icon-edit"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task-notification">
+                        <div class="warning">
+                            <span class="icon icon-warning"></span>
+                            <div class="task-text">Вы не выполнели эту задачу</div>
+                        </div>
+                        <div class="congratulation">
+                            <span class="icon icon-star"></span>
+                            <div class="task-text">Поздравляем! Вы справились с задачей </div>
+                        </div>
+                    </div>
+                </div>
+                <!--ONE TASK END-->
+                <!--ONE TASK START-->
+                <div class="task-container reminder">
+                    <div class="task reminder">
+                        <div class="to-do-time">14:00</div>
+                        <div class="task-header flex-container">
+                            <span class="icon icon-arrow"></span>
+                            <div class="short-task-text">Заказать наклейки техноэласта!</div>
+                            <span class="icon icon-cancel"></span>
+                        </div>
+                        <div class="task-content-wrap">
+                            <div class="time-row flex-container">
+                                <div class="task-icon">
+                                    <span class="icon icon-time"></span>
+                                </div>
+                                <span class="time">13:30</span>
+                                <div class="task-icon">
+                                    <span class="icon icon-bell"></span>
+                                </div>
+                            </div>
+                            <div class="task-text-row flex-container">
+                                <div class="task-icon">
+                                    <span class="icon icon-list"></span>
+                                </div>
+                                <div class="text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam temporibus fugit perspiciatis ab incidunt deserunt
+                                    iure est officiis, molestias nobis aspernatur aperiam cupiditate sapiente dolores ducimus maiores laborum cumque nam.
+                                </div>
+                            </div>
+                            <div class="task-check-row">
+                                <div class="task-icon">
+                                    <span class="icon icon-warning"></span>
+                                    <input type="checkbox" class="icon-warning" id="chkbox-2" name="chkbox-2">
+                                    <label for="chkbox-2">Задача еще не выполнена</label>
+                                </div>
+                            </div>
+                            <div class="task-edit-row">
+                                <div class="task-icon">
+                                    <span class="icon icon-edit"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="task-notification">
+                        <div class="warning">
+                            <span class="icon icon-warning"></span>
+                            <div class="task-text">Вы не выполнели эту задачу</div>
+                        </div>
+                        <div class="congratulation">
+                            <span class="icon icon-star"></span>
+                            <div class="task-text">Поздравляем! Вы справились с задачей </div>
+                        </div>
+                    </div>
+                </div>
+                <!--ONE TASK END-->
+            </div>
+        </div>
+    </div>
+</main>
+<!--MAIN END-->
+
+<!--EDIT TASK START-->
+<div class="overlay"></div>
+<div class="edit-task">
+    <div class="container">
+        <div class="title">
+            <span>Новая задача</span>
+        </div>
+        <div class="input-group flex-container">
+            <div class="task-bell">
+                <span class="icon icon-bell"></span>
+                <span>Оповестить за</span>
+            </div>
+            <input type="time" name="task-time" id="task-time">
+            <input type="date" name="task-date" id="task-date">
+        </div>
+        <div class="input-group">
+            <div class="textarea-wrap">
+                <textarea name="task-text" id="task-text"></textarea>
+                <label for="task-text">Ваша задача</label>
+                <div class="symbol-count">
+                    <span class="count">0</span>
+                    <span class="max-count">/1000</span>
+                </div>
+            </div>
+        </div>
+        <div class="input-group">
+            <button type="submit" class="add-task-btn">Добавить</button>
+        </div>
+    </div>
+</div>
+<!--EDIT TASK END-->
+</body>
+</html>
